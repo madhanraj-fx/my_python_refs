@@ -2,7 +2,7 @@
 import boto
 from boto.s3.key import Key
 
-src_loc		= 'src'
+src_loc		= 's3://test-bkt/src/'
 
 src_bkt_nm = src_loc.split('/')[2]
 src_prefix = src_loc.split('s3://' + src_loc.split('/')[2] + '/')[1]
